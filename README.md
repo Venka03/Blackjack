@@ -5,10 +5,10 @@ Write card game blackjack. In game there are dealer and user.
 Each card has its value:
 - cards from 2 to 10 of any suit has value as its number;
 - Jack, Queen, King has value 10;
-- Ace has value either 1 or 11.
+- Ace has value either 1 or 11.<br>
 User loses if:
 - user get more than 21;
-- dealer has more or equal amount of points;
+- dealer has more or equal amount of points;<br>
 User wins if:
 - user has more points than dealer;
 - dealer has more points than 21 when user's not exceeding 21.
