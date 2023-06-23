@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <thread>
 #include <chrono>
+#include <time.h>
 
 using namespace std;
 
@@ -161,14 +162,13 @@ private:
         Card tmp;
         for (auto it = deck.rbegin(); it!=deck.rend(); it++, i--){
             int k = get_random_number(0, i);
-            advance(j, i);
+            advance(j, k);
             tmp = *it;
             *it = *j;
             *j = tmp;
             j = deck.begin();
         }    
     }
-
     void shuffle2(){
         /*
         Perfect shuffle
@@ -307,7 +307,7 @@ void lower(string &str) {
 }
 
 int main(){
-    srand(time(NULL));
+    srand(time(0));
     Deck d;
     int money, bet;
     string name, answer;
